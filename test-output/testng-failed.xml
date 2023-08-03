@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ecommerceportal]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="login(failed)">
+    <classes>
+      <class name="Ecommerce.com.loginrunner">
+        <methods>
+          <include name="forgetpasswordlinkispresntornot"/>
+          <include name="BaseTest"/>
+        </methods>
+      </class> <!-- Ecommerce.com.loginrunner -->
+    </classes>
+  </test> <!-- login(failed) -->
+  <test thread-count="5" name="cartfunction(failed)">
+    <classes>
+      <class name="Ecommerce.com.CartTestRunner">
+        <methods>
+          <include name="testshippingdetails"/>
+          <include name="BaseTest"/>
+        </methods>
+      </class> <!-- Ecommerce.com.CartTestRunner -->
+    </classes>
+  </test> <!-- cartfunction(failed) -->
+</suite> <!-- Failed suite [ecommerceportal] -->

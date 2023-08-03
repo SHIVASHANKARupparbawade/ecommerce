@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ecommerceportal">
+	<test name="login" parallel="tests">
+    
+		<classes>
+			<class name="Ecommerce.com.loginrunner"/>
+			
+			
+				
+			
+		</classes>
+	</test>
+	
+	<test name="searchfunction">
+		<classes>
+			<class name="Ecommerce.com.SerachFunctionRunner"/>
+		</classes>
+	</test>
+	
+	<test name="cartfunction">
+		<classes>
+			<class name="Ecommerce.com.CartTestRunner">
+				
+			</class>
+		</classes>
+		
+	</test>
+</suite>

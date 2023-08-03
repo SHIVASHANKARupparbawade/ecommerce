@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">ecommerceportal</th></tr>
+<tr><td><a href="#t0">login</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">63,040</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">searchfunction</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16,133</td><td></td><td></td></tr>
+<tr><td><a href="#t2">cartfunction</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,733</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">11</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">92,906</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ecommerceportal</th></tr></tbody><tbody id="t0"><tr><th colspan="4">login &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Ecommerce.com.loginrunner</td><td><a href="#m0">forgetpasswordlinkispresntornot</a></td><td rowspan="1">1691061764539</td><td rowspan="1">11190</td></tr><tr><th colspan="4">login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">Ecommerce.com.loginrunner</td><td><a href="#m1">Sucessfulllogin</a></td><td rowspan="1">1691061816776</td><td rowspan="1">6808</td></tr><tr class="passedeven"><td><a href="#m2">blankpassword</a></td><td rowspan="1">1691061806494</td><td rowspan="1">10266</td></tr><tr class="passedeven"><td><a href="#m3">invalidpasswordtest</a></td><td rowspan="1">1691061786764</td><td rowspan="1">10113</td></tr><tr class="passedeven"><td><a href="#m4">isloginbuttondisplayed</a></td><td rowspan="1">1691061775742</td><td rowspan="1">677</td></tr><tr class="passedeven"><td><a href="#m5">lisinvalidusernameTest</a></td><td rowspan="1">1691061776426</td><td rowspan="1">10332</td></tr><tr class="passedeven"><td><a href="#m6">loginwithoutusernametext</a></td><td rowspan="1">1691061796877</td><td rowspan="1">9610</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">searchfunction &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">Ecommerce.com.SerachFunctionRunner</td><td><a href="#m7">emptysearchproduct</a></td><td rowspan="1">1691061827507</td><td rowspan="1">3829</td></tr><tr class="passedeven"><td><a href="#m8">invalidsearchproduct</a></td><td rowspan="1">1691061831344</td><td rowspan="1">3874</td></tr><tr class="passedeven"><td><a href="#m9">searchiconispresentornot</a></td><td rowspan="1">1691061826990</td><td rowspan="1">517</td></tr><tr class="passedeven"><td><a href="#m10">validsearchproduct</a></td><td rowspan="1">1691061835242</td><td rowspan="1">4570</td></tr><tr class="passedeven"><td><a href="#m11">verifyproductdetails</a></td><td rowspan="1">1691061839824</td><td rowspan="1">118</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">cartfunction &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Ecommerce.com.CartTestRunner</td><td><a href="#m12">testshippingdetails</a></td><td rowspan="1">1691061843147</td><td rowspan="1">10518</td></tr></tbody>
+</table>
+<h2>login</h2><h3 id="m0">Ecommerce.com.loginrunner#forgetpasswordlinkispresntornot</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;forgot-password&apos;]&quot;}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b8e3cfd06a5835ee1c0b7e3ee0009fe3, findElement {using=xpath, value=//span[@class=&apos;forgot-password&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\shivs\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63836}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63836/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b8e3cfd06a5835ee1c0b7e3ee0009fe3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at Ecommerce.Test.loginTest.forgotpasswordlinktextispresentornot(loginTest.java:122)
+	at Ecommerce.com.loginrunner.forgetpasswordlinkispresntornot(loginrunner.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Ecommerce.com.loginrunner#Sucessfulllogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Ecommerce.com.loginrunner#blankpassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Ecommerce.com.loginrunner#invalidpasswordtest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Ecommerce.com.loginrunner#isloginbuttondisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Ecommerce.com.loginrunner#lisinvalidusernameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Ecommerce.com.loginrunner#loginwithoutusernametext</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>searchfunction</h2><h3 id="m7">Ecommerce.com.SerachFunctionRunner#emptysearchproduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Ecommerce.com.SerachFunctionRunner#invalidsearchproduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Ecommerce.com.SerachFunctionRunner#searchiconispresentornot</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Ecommerce.com.SerachFunctionRunner#validsearchproduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Ecommerce.com.SerachFunctionRunner#verifyproductdetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>cartfunction</h2><h3 id="m12">Ecommerce.com.CartTestRunner#testshippingdetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[normalize-space()=&apos;Please select the address you want to ship to&apos;]&quot;}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d62197b40e4ad48bb03472e1b1fb2a50, findElement {using=xpath, value=//span[normalize-space()=&apos;Please select the address you want to ship to&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\shivs\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63915}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63915/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d62197b40e4ad48bb03472e1b1fb2a50
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at Ecommerce.Test.CartFunction.clickonshippbutton(CartFunction.java:32)
+	at Ecommerce.com.CartTestRunner.testshippingdetails(CartTestRunner.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
